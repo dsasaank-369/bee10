@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #coin {
+        padding: 40px;
+      }
+
+      .coin1 {
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+      .coin2 {
+        font-size: 15px;
+        padding: 40px 0px 40px 0px;
+      }
+      .token-bar-txt:after {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        height: 65px;
+        width: 1px;
+        content: "";
+        background: rgba(22, 161, 255, 0.5);
+      }
+      .vc_column_container > .vc_column-inner {
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+      }
+      .token-bar-chart {
+        display: flex;
+        margin-top: 135px;
+      }
+      .token-bar-item {
+        position: relative;
+        height: 40px;
+        border-radius: 20px;
+      }
+      .token-bar-txt {
+        position: absolute;
+        padding-bottom: 10px;
+        top: -110px;
+        left: 50%;
+        min-width: 100%;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+      .token-bar-item:first-child > span {
+        display: none;
+      }
+      .token-bar-item:before,
+      .token-bar-item > span {
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        content: "";
+        z-index: -1;
+      }
+      .token-bar-item.tbic1 {
+        background: #002674;
+      }
+      @media only screen and (max-width: 767px) {
+        #coin {
+          padding: 20px;
+        }
+        .token-bar-chart {
+          display: block;
+          margin: 0;
+          overflow: hidden;
+        }
+        .token-bar-item {
+          margin: 10px 0;
+        }
+        .token-bar-txt {
+          text-align: left !important;
+          padding-bottom: 0;
+          top: 50%;
+          left: 100%;
+          min-width: 300%;
+          /* text-align: center; */
+          transform: translateX(60px) translateY(-50%);
+          font-size: 0.9em;
+        }
+        .token-bar-txt:after {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          height: 1px;
+          width: 40px;
+          margin-left: -55px;
+        }
+        .token-bar-item:before,
+        .token-bar-item > span {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="coin">
+      <p class="coin1">COINS DISTRIBUTION</p>
+
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="token-bar-chart">
+            <div
+              class="token-bar-item tbic1"
+              style="width: 27%; background: #5378fb"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #5378fb">27%</span>
+                <span>Public &amp; Sale</span>
+              </div>
+              <span style="background: #5378fb"></span>
+            </div>
+            <!-- <div
+              class="token-bar-item tbic1"
+              style="width: 1%; background: #3bb8ff"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #3bb8ff">1%</span>
+                <span>Liquidity </span>
+              </div>
+              <span style="background: #3bb8ff"></span>
+            </div> -->
+            <div
+              class="token-bar-item tbic1"
+              style="width: 10%; background: #3bb8ff"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #3bb8ff">10%</span>
+                <span>Liquidity &amp; Advisory</span>
+              </div>
+              <span style="background: #3bb8ff"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 20%; background: #5378fb"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #5378fb">20%</span>
+                <span>Marketing</span>
+              </div>
+              <span style="background: #5378fb"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 12%; background: #004ae2"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #004ae2">12%</span>
+                <span>Team</span>
+              </div>
+              <span style="background: #004ae2"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 17%; background: #004ae2"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #004ae2">17%</span>
+                <span>Incentives &amp; Rewards</span>
+              </div>
+              <span style="background: #004ae2"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 10%; background: #004ae2"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #004ae2">10%</span>
+                <span>Reserves</span>
+              </div>
+              <span style="background: #004ae2"></span>
+            </div>
+            <div class="token-bar-item tbic1" style="width: 20%">
+              <div class="token-bar-txt">
+                <span>20%</span>
+                <span>Donations</span>
+              </div>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="coin2">
+        Team Coins are locked for 9 Years. This means that we can't use or sell
+        our Team Coins for 9 Years and your Investment is safe.
+      </p>
+
+      <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+          <div class="token-bar-chart">
+            <div
+              class="token-bar-item tbic1"
+              style="width: 25%; background: #5378fb"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #5378fb">25%</span>
+                <span>R & D and Production</span>
+              </div>
+              <span style="background: #5378fb"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 10%; background: #3bb8ff"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #3bb8ff">10%</span>
+                <span>Security </span>
+              </div>
+              <span style="background: #3bb8ff"></span>
+            </div>
+            <div
+              class="token-bar-item tbic1"
+              style="width: 30%; background: #3b7bff"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #3b7bff">30%</span>
+                <span>Operations &amp; Maintenance</span>
+              </div>
+              <span style="background: #3b7bff"></span>
+            </div>
+            <!-- <div
+              class="token-bar-item tbic1"
+              style="width: 30%; background: #004ae2"
+            >
+              <div class="token-bar-txt">
+                <span style="color: #004ae2">30%</span>
+                <span>Production &amp; Operations</span>
+              </div>
+              <span style="background: #004ae2"></span>
+            </div> -->
+            <div class="token-bar-item tbic1" style="width: 5%">
+              <div class="token-bar-txt">
+                <span>5%</span>
+                <span>Legal</span>
+              </div>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
